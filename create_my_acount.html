@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap" rel="stylesheet">
+    <title>My acount</title>
+    <style>
+    :root{
+        --black-white: #232323;
+        --white-black: #EBEBEB;
+        --blue: #BDEDFF;
+        --very-light-pink: #C7C7C7;
+        --text-input-field: #f7f7f7;
+        --white: #FFFFFF;
+        --hospital-green: #acd9b2;
+        --black: #000000;
+        --sm-mov: 13px;
+        --md-mov: 16px;
+        --lg-mov: 19;
+        --sm-des: 19px;
+        --md-desk: 23px;
+        --lg-desk: 26px;
+        --poppins: font-family: 'Poppins', sans-serif;}
+        body
+        {
+            font-family: 'Poppins', sans-serif;
+            background: var(--blue);
+            margin: 0px;
+            display: grid;
+        }
+        .content
+            {
+                width: 100%;
+                height: 100vh;
+                display: grid;
+                align-content: stretch;
+                grid-template-rows: auto 300px auto;
+                place-items: center;
+
+            }
+            .title
+            {
+            font-size: var(--lg-desk);
+            color: var(--black);
+            text-align: start;
+             }
+        .form
+        {
+            display: grid;
+            place-items: top;
+        }
+        .user
+        {
+                color: var(--black);
+                font-size: var(--lg-desk);
+                width: 100%;
+                text-align: left;
+                margin-bottom: 12px;
+        }
+        .input__input-password
+            {
+            border: none;
+            border-radius: 8px;
+            background-color: var(--text-input-field);
+            width: 100%;
+            height: 30px;
+            margin-bottom: 16px;
+            
+            }
+           
+            .primary-button{
+           
+            width: 200px;
+            font-size: var(--md-des);
+            font-weight: bolder;
+            border: none;
+            border-radius: 8px;
+            background: var(--hospital-green);
+            color: var(--white);
+            padding: 12px 12px 12px 12px;
+            margin-left: 4px;
+            margin-top: 20px;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+            .primary-button:hover
+            {
+             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">My account</div>
+        <form action="/" class="form">
+        <label for="" class="user">Name</label>
+        <input type="text"  id="" class="input__input-password" placeholder="Brayan cabrera">
+        <label for="" class="user">Email address</label>
+        <input type="text"  id="" class="input__input-password" placeholder="Brayan@example.com">
+        <label for="" class="user">Password</label>
+        <input type="password" name="" id="" class="input__input-password" placeholder="***********">
+    </form>
+    <button class="primary-button">Create acount</button>
+</div>
+
+</body>
+</html>

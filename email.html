@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d5788eb4bd.css" crossorigin="anonymous">
+    <title>Email</title>
+    <style>
+
+        :root{
+            --black-white: #232323;
+            --white-black: #EBEBEB;
+            --blue: #BDEDFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --white: #FFFFFF;
+            --hospital-green: #acd9b2;
+            --black: #000000;
+            --sm-mov: 13px;
+            --md-mov: 16px;
+            --lg-mov: 19;
+            --sm-des: 19px;
+            --md-desk: 23px;
+            --lg-desk: 26px;
+            --poppins: font-family: 'Poppins', sans-serif;}
+           
+            body
+            {
+                font-family: 'Poppins', sans-serif;
+                background: var(--blue);
+                margin: 0px;
+            }
+
+        .container
+        {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        }
+        .info-container
+        {
+            display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 400px;
+        border-radius: 20px;
+        height: auto;
+        }
+        .info-container .logo
+        {
+            width: 200px;
+            margin-bottom: 50px;
+            margin-top: 8px;
+             /*usamos justify-self para centrar objetos dentro de un layout grid*/
+            justify-self: center;
+        }
+        .title
+        {
+            font-size: var(--lg-desk);
+            color: var(--black);
+            
+        }
+        .subtitle
+        {
+            color: var(--black-white);
+            font-weight: 300;
+            width: 100%;
+            font-size:var(--sm-des);
+        }
+        .imagen
+        {
+            /*Creamos un circulo al final */
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+        background-color: var(--text-input-field);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 18px;
+         }
+         .icons
+        {
+        background-color: var(--white);
+        border-radius: 8px;
+        }
+        .img-botton
+        {
+            display: grid;
+            place-items: center;
+            width: 100%;
+        }
+        .img-botton .icons
+        {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .primary-button
+        {
+    width: 80%;
+    font-size: var(--md-des);
+    font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+    background: var(--hospital-green);
+    color: var(--white);
+    padding: 12px 12px 12px 12px;
+    margin-bottom: 18px;
+    margin-top: 8px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .primary-button:hover
+        {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+
+        .name_autor
+        {
+            font-size: var(--md-mov);
+            text-align: center;
+        }
+        .dont 
+        {
+            font-size: var(--sm-des);
+            color: var(--black-white);
+            font-weight: 300;
+        }
+        .dont a{
+            font-weight: bold;
+            color: var(--black-white);
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: var(--md-desk);
+        }
+        .dont a:hover
+        {
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-container">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <h1 class="title">Email has been sent! </h1>
+            <p class="subtitle">Place check your inbox for intructions on how to reset the password</p>
+        <div class="img-botton">
+           <div class="imagen">
+            <img src="./icons/email.svg" alt="icono" class="icons">
+        </div>
+            <button class="primary-button login-button">Login</button>
+            <p class="dont">Did not receive the email? <a href="https://mail.google.com/mail/u/0/">Resend</a></p>
+        </div>
+     </div>
+</div>
+<div class="name_autor"><H1>By Psicodevp</H1></div>
+</body>
+</html>
