@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap" rel="stylesheet">
+    <title>menu</title>
+    <style>
+        :root{
+            --black-white: #232323;
+            --white-black: #EBEBEB;
+            --blue: #BDEDFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --white: #FFFFFF;
+            --hospital-green: #acd9b2;
+            --black: #000000;
+            --sml: 13px;
+            --sm: 16px;
+            --md: 19;
+            --lg: 23px;
+            --lg-desk: 26px;
+            --poppins: font-family: 'Poppins', sans-serif;
+
+        }
+        body
+        {
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        /* Diseñando el contenedor del menu */
+    .desktop-menu
+    {
+        width: 100px;
+        height: auto;
+        border: 1px solid var(--very-light-pink);
+        border-radius: 6px;
+        padding: 20px 20px 0 20px;
+    }
+    /* Modificando el estilo de las listas, quitamos el border y padin que traen por defecto en su estilo al igual que el punto. */
+    .desktop-menu ul
+    {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .desktop-menu ul li{
+        text-align: end;
+    }
+    /* Colocamos el primer y el segundo hijo en negrita */
+    .desktop-menu ul li:nth-child(1),
+    .desktop-menu ul li:nth-child(2){
+        font-weight: bold;
+    }
+    
+    .desktop-menu ul li:nth-child(3)
+    {
+       padding-top: 20px;
+       border-top: 1px solid var(--very-light-pink);
+    }
+    .desktop-menu ul li a{
+        text-decoration: none;
+        color: var(--black);
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .desktop-menu ul li .sign
+    {
+        color: var(--hospital-green);
+        font-size: var(--sml);
+    }
+   
+</style>
+</head>
+<body>
+    <div class="desktop-menu">
+        <ul>
+            <li><a href="./" class="title">my orders</a></li>
+            <li><a href="" >My account</a></li>
+            <li><a class ="sign" href="" >Sign Out</a></li>
+        </ul>
+    </div>
+</body>
+</html>
