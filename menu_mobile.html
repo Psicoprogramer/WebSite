@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap" rel="stylesheet">
+    <title>menu_mobile</title>
+    <style>
+         :root{
+            --black-white: #232323;
+            --white-black: #EBEBEB;
+            --blue: #BDEDFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --white: #FFFFFF;
+            --hospital-green: #acd9b2;
+            --black: #000000;
+            --sml: 13px;
+            --sm: 16px;
+            --md: 19;
+            --lg: 23px;
+            --lg-desk: 26px;
+            --poppins: font-family: 'Poppins', sans-serif;
+
+        }
+        body
+        {
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        .mobile-menu
+        {
+            margin: 23px;
+            display: grid;
+            height: auto;
+          
+        }
+        .mobile-menu ul
+        {
+            /* Quitamos el margen por defectos de las ul */
+            margin: 0;
+            padding: 0;
+        }
+        .mobile-menu li
+        {
+            list-style: none;
+        }
+        .mobile-menu li a
+        {
+            text-decoration: none;
+        }
+        .categorias
+        {
+            border-bottom: 1px solid var(--black);
+        }
+        .categorias li
+        {
+           margin-bottom: 35px;
+        
+        }
+        .categorias li a
+        {
+            /* text-decoration: none; */
+            color: var(--black);
+            font-size: var(--md);
+            font-weight: 600;
+        }
+        
+    
+        .selecciones li
+        {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            /* list-style: none; */
+        }
+        .selecciones li a
+        {
+           
+            color: var(--black);
+            font-size: var(--md);
+            font-weight: 600;
+        }
+        .others
+        {
+
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            flex-direction: column;
+            align-items:flex-start;
+        }
+        .others li
+        {
+            /* list-style: none; */
+            margin-bottom: 10px;
+        }
+       
+
+        .mail a
+        {
+           color: var(--black-white);
+           font-weight: 400;
+        }
+        .signOut a
+        {
+            color: var(--hospital-green);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-menu">
+        <ul class="categorias">
+            <li class="one">
+                <a href="">CATEGORIES</a>
+            </li>
+            <li class="two">
+                <a href="">All</a>
+            </li>
+            <li class="three">
+                <a href="">Clothes</a>
+            </li>
+            <li class="four">
+                <a href="">Electronics</a>
+            </li>
+            <li class="five">
+                <a href="">Furnitures</a>
+            </li>
+            <li class="six">
+                <a href="">Toys</a>
+            </li>
+            <li class="seven">
+                <a href="">Others</a>
+            </li>
+        </ul>
+
+        <ul class="selecciones">
+            <li class="myOrders">
+                <a href="">My orders</a>
+            </li>
+            <li class="myAccount">
+                <a href="">My Account</a>
+            </li>
+        </ul>
+        <ul class="others">
+            <li class="mail">
+                <a href="">camilayokoo@example.com</a>
+            </li>
+            <li class="signOut">
+                <a href="">sign Out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
