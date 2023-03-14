@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap" rel="stylesheet">
+   
+    <title>My order</title>
+    <style>
+        :root{
+            --black-white: #232323;
+            --white-black: #EBEBEB;
+            --blue: #BDEDFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --white: #FFFFFF;
+            --hospital-green: #acd9b2;
+            --black: #000000;
+            --sml: 13px;
+            --sm: 16px;
+            --md: 19;
+            --lg: 23px;
+            --lg-desk: 26px;
+            --poppins: font-family: 'Poppins', sans-serif;
+
+        }
+        body
+        {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        } 
+        /* Estilizando el contenedor principal */
+        .my_order
+
+        {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .my_order h1
+        {
+            display: flex;
+            font-size: var(--lg-desk);
+            margin-top: 20  px;
+            margin-left: 8px;
+            justify-content: center;
+            color: var(--hospital-green);
+            margin-bottom: 20px;
+        }
+        .my_order-content
+        {
+            width: auto;
+            height: 100px;
+            background: var(--blue);
+            border-radius: 10px;
+            border: none;
+            position: relative;
+            margin: 20px 20px 20px 20px;
+        }
+        .my_order-content p
+        {
+            padding-left: 10px;
+        }
+        .datos #row
+        {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+        }
+        .datos span:nth-child(1)
+        {
+        font-weight: bold;
+        margin-bottom: 8px;
+        }
+        .datos span:nth-child(2)
+        {
+        font-weight: 100;
+        }
+        .value
+        {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-top: 35px;
+            margin-right: 10px;
+            font-weight: bold;
+            
+        }
+        /* Estilizando los contenedores de imagenes */
+        .contenedorArtucules
+        {
+            padding: 10px;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            margin: 20px 20px 20px 20px;    
+            
+        }
+        
+        .contenedorArtucules img
+        {
+            border-radius: 60px;
+            width: 250px;
+            height: 250px;
+        }
+       .contenedorArtucules p:nth-child(2)
+       {
+        display: flex;
+        justify-content: right;
+       }
+        .description span
+        {
+        font-size: var(--lg);
+        }
+        .description span:nth-child(1)
+        {
+        color: var(--hospital-green);
+        }
+        .description_value
+        {
+            /* Al dar un margin left auto esto mandando al contendor al final del contenedor padre */
+         margin-left: auto;
+         font-weight: bold;
+            
+        }
+        @media (max-width: 540px) {
+            .contenedorArtucules img
+        {
+            border-radius: 40px;
+            width: 150px;
+            height: 150px;
+            image-rendering: pixelated;
+        }
+        .description span
+        {
+        font-size: var(--sm);
+        }
+        .description_value
+       {
+        font-size: var(--sm);
+       }
+
+        }
+        @media (max-width: 340px) {
+            .contenedorArtucules img
+        {
+            border-radius: 20px;
+            width: 100px;
+            height: 100px;
+            image-rendering: pixelated;
+        }
+        .description span
+        {
+        font-size: var(--sm);
+        }
+        .description_value
+       {
+        font-size: var(--sm);
+       }
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="my_order">
+        <h1>My Order</h1>
+        <div class="my_order-content">
+            <p class="datos">
+                <span id="row">11.03.2023</span>
+                <span id="row">6 Articles</span>
+            </p>
+            <p class="value">$560.00</p>
+        </div>
+        <div class="contenedorArtucules">
+            <img src="https://images.pexels.com/photos/7055960/pexels-photo-7055960.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" class="imgen">
+            <p class="description">
+                <span>Round shell</span>
+            </p>
+            <p class="description_value">
+                <span>$120.00</span>
+            </p>
+        </div>
+        </div>
+        <div class="contenedorArtucules">
+            <img src="https://images.pexels.com/photos/7055960/pexels-photo-7055960.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" class="imgen">
+             <p class="description">
+                 <span>Round shell</span>
+             </p>
+             <p class="description_value">
+                 <span>$120.00</span>
+             </p>
+         </div>
+         <div class="contenedorArtucules">
+            <img src="https://images.pexels.com/photos/7055960/pexels-photo-7055960.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" class="imgen">
+             <p class="description">
+                 <span>Round shell</span>
+             </p>
+             <p class="description_value">
+                 <span>$120.00</span>
+             </p>
+         </div>
+         <div class="contenedorArtucules">
+            <img src="https://images.pexels.com/photos/7055960/pexels-photo-7055960.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" class="imgen">
+             <p class="description">
+                 <span>Round shell</span>
+             </p>
+             <p class="description_value">
+                 <span>$120.00</span>
+             </p>
+         </div>
+         <div class="contenedorArtucules">
+            <img src="https://images.pexels.com/photos/7055960/pexels-photo-7055960.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" class="imgen">
+             <p class="description">
+                 <span>Round shell</span>
+             </p>
+             <p class="description_value">
+                 <span>$120.00</span>
+             </p>
+         </div>
+         <div class="contenedorArtucules">
+            <img src="https://images.pexels.com/photos/7055960/pexels-photo-7055960.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" class="imgen">
+             <p class="description">
+                 <span>Round shell</span>
+             </p>
+             <p class="description_value">
+                 <span>$120.00</span>
+             </p>
+         </div>
+       
+    </div>
+</body>
+</html>

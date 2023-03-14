@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap" rel="stylesheet">
+   
+    <title>My order</title>
+    <style>
+        :root{
+            --black-white: #232323;
+            --white-black: #EBEBEB;
+            --blue: #BDEDFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --white: #FFFFFF;
+            --hospital-green: #acd9b2;
+            --black: #000000;
+            --sml: 13px;
+            --sm: 16px;
+            --md: 19;
+            --lg: 23px;
+            --lg-desk: 26px;
+            --poppins: font-family: 'Poppins', sans-serif;
+
+        }
+        body
+        {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        } 
+        .first-contend
+        {
+            width: 100%;
+        }
+        .second-contend
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            place-items: center;
+        }
+        .title
+        {
+            display: flex;
+            font-size: var(--lg-desk);
+            margin-top: 20  px;
+            margin-left: 8px;
+            justify-content: center;
+            color: var(--hospital-green);
+            margin-bottom: 20px;
+        }
+        .second-contend p:nth-child(2)
+        {
+
+        width: 100%;
+        text-align: right;
+        }
+        </style>
+<body>
+    <div class="first-contend">
+        <h1 class="title">My Orders</h1>
+        <div class="second-contend">
+            <p class="datos">
+                <span id="row">11.03.2023</span>
+                <span id="row">article</span>
+            </p>
+            <p class="value">$560.00</p>
+            <span> > </span>
+        </div>
+       
+    </div>
+</body>
+</html>
