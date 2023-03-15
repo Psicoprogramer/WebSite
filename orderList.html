@@ -28,33 +28,56 @@
         body
         {
             font-family: 'Poppins', sans-serif;
-            margin: 0;
+            background: var(--white);
         } 
         .first-contend
         {
+            display:grid;
             width: 100%;
+            justify-content: center;
+        
         }
         .second-contend
         {
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
             place-items: center;
+            
         }
-        .title
+        .title 
         {
             display: flex;
+            font-weight: bold;
             font-size: var(--lg-desk);
-            margin-top: 20  px;
+            margin-top: 40px;
             margin-left: 8px;
             justify-content: center;
             color: var(--hospital-green);
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+
+            
         }
         .second-contend p:nth-child(2)
         {
-
         width: 100%;
         text-align: right;
+        }
+        .p 
+        .datos #row
+        {
+            display: grid;
+            grid-template-rows: 1fr;
+            margin: 0;
+        }
+        .arrow
+        {
+            font-weight: bold;
+            font-size: var(--lg-desk);
+            color: var(--hospital-green);
+        }
+        #row2
+        {
+            color: var(--hospital-green);
         }
         </style>
 <body>
@@ -63,10 +86,42 @@
         <div class="second-contend">
             <p class="datos">
                 <span id="row">11.03.2023</span>
-                <span id="row">article</span>
+                <span id="row2">article</span>
             </p>
             <p class="value">$560.00</p>
-            <span> > </span>
+            <span class ="arrow"> > </span>
+        </div>
+        <div class="second-contend">
+            <p class="datos">
+                <span id="row">11.03.2023</span>
+                <span id="row2">article</span>
+            </p>
+            <p class="value">$560.00</p>
+            <span class ="arrow"> ></span>
+        </div>
+        <div class="second-contend">
+            <p class="datos">
+                <span id="row">11.03.2023</span>
+                <span id="row2">article</span>
+            </p>
+            <p class="value">$560.00</p>
+            <span class ="arrow"> ></span>
+        </div>
+        <div class="second-contend">
+            <p class="datos">
+                <span id="row">11.03.2023</span>
+                <span id="row2">article</span>
+            </p>
+            <p class="value">$560.00</p>
+            <span class ="arrow"> > </span>
+        </div>
+        <div class="second-contend">
+            <p class="datos">
+                <span id="row">11.03.2023</span>
+                <span id="row2">article</span>
+            </p>
+            <p class="value">$560.00</p>
+            <span class ="arrow"> > </span>
         </div>
        
     </div>

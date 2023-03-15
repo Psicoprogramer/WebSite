@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap" rel="stylesheet">
+   
+    <title>My order</title>
+    <style>
+        :root{
+            --black-white: #232323;
+            --white-black: #EBEBEB;
+            --blue: #BDEDFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --white: #FFFFFF;
+            --hospital-green: #acd9b2;
+            --black: #000000;
+            --sml: 13px;
+            --sm: 16px;
+            --md: 19;
+            --lg: 23px;
+            --lg-desk: 26px;
+            --poppins: font-family: 'Poppins', sans-serif;
+
+        }
+        body
+        {
+            font-family: 'Poppins', sans-serif;
+            background: var(--white);
+            margin: 0;
+        } 
+        .navegationBar ul
+        {
+        display: flex;
+        list-style: none;
+        margin-top: 24px;
+        text-align: center;
+
+        }
+        nav
+        {
+            width: 100%;  
+            display: flex;
+            margin: 0;
+            border-bottom: 1px solid black;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+        }
+        .navbar-left , .navnar-right
+        {
+            display: flex;
+            margin: 0;
+            /* align-self: flex-start; */
+        }
+        .menu
+        {
+            display: none;
+        }
+        .logo
+        {
+            width: 100px;
+            align-self: flex-start;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .navbar-left
+        {
+            align-items: center; 
+            margin-left: 10px;
+        }
+        .navnar-right
+        {
+            justify-content: right; 
+            width: 100%;
+            display: flex;
+            margin-top: 0;
+            align-items: center;
+            padding-right: 10px;
+            color: chocolate;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .lista 
+        {
+            display: flex;
+            align-items: center;
+            height: 10px;
+            margin-left: 10px;
+        }
+        .lista a
+        {
+            display: flex;
+            text-decoration: none;
+            color: var(--black);
+            margin-left: 20px;
+            margin-right: 20px;
+            /* Al colocar este padding aumeta el tamaño del espacido del su relleno de bordes */
+            padding: 6px;
+            border: 1px solid var(--white);
+            border-radius: 20px;
+        }
+        .lista a:hover
+        {
+            background: var(--hospital-green);
+            border-color: var(--hospital-green);
+            color: var(--white);
+        }
+        .mail img
+        {
+            margin-top: 15px;
+            padding-left: 10px;
+            
+        }
+        .mail
+        {
+            position: relative;
+        }
+        .cantidad p
+        {
+            position: absolute;
+            font-size: 15px;
+            text-align: center;
+            width: 20px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: var(--hospital-green);
+            top: 0;
+            right: 0;
+            display: grid;
+            align-items: end;
+            margin-top: 6px;
+            margin-right: -7px;
+        }
+        @media (max-width: 600px)
+        {
+        .menu
+        {
+            margin-left: 6px;
+            display: block;  
+        }
+        .navbar-left ul
+        {
+            display: none;
+        }
+        .navnar-right p
+        {
+            display: none;
+        }
+        }
+        @media (max-width: 1140px)
+        {
+        .lista a
+        {
+            margin-right: 1px; 
+        }
+        }
+        @media (max-width: 1030px)
+        {
+        .lista a
+        {
+            margin-right: 1px; 
+            margin-left: 0px;
+        }
+        }
+        @media (max-width: 900px)
+        {
+            .navbar-left, .navnar-right
+            {
+                font-size: 13px;
+            }
+        }
+        @media (max-width: 800px)
+        {
+            .navbar-left, .navnar-right
+            {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navegationBar">
+        <img src="./icons/icon_menu.svg" alt="Menu" class="menu">
+    <div class="navbar-left">
+        <img src="./logos/logo_yard_sale.svg" alt="" class="logo">
+        <ul class="lista">
+            <li class="lista">
+                <a href="">All</a>
+            </li>
+            <li class="lista">
+                <a href="">Clothes</a>
+            </li>
+            <li class="lista">
+                <a href="">Electronic</a>
+            </li>
+            <li class="lista">
+                <a href="">Furniture</a>
+            </li>
+            <li class="lista">
+                <a href="">Toys</a>
+            </li>
+            <li class="listas">
+                <a href="">Others</a> 
+            </li>
+            </ul>
+    </div>
+    <div class="navnar-right">
+        <ul>
+            <li>
+            <p> Platzi@example.com </p>  
+            </li>
+            <li class="mail">
+                <img src="./icons/icon_shopping_cart_notification.svg" alt="">
+                <div class="cantidad"><p>2</p></div>
+            </li>
+        </ul>
+    </div>
+</nav>
+</body>
+</html>
