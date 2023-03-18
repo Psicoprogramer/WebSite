@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Righteous&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200&display=swap" rel="stylesheet">
+    <title>card-shop</title>
+    <style>
+        :root{
+            --black-white: #232323;
+            --white-black: #EBEBEB;
+            --blue: #BDEDFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #f7f7f7;
+            --white: #FFFFFF;
+            --hospital-green: #acd9b2;
+            --black: #000000;
+            --gren:#1314129c;
+            --sm-mov: 13px;
+            --md-mov: 16px;
+            --lg-mov: 19;
+            --sm-des: 19px;
+            --md-desk: 23px;
+            --lg-desk: 26px;
+            --poppins: font-family: 'Poppins', sans-serif;
+
+        }
+        body
+        {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        aside
+        {
+            display: grid;
+            width: 100%;
+            justify-content: end;
+            height: auto;
+            margin-left: 10px;
+        }
+        .container-article
+        {
+            display: grid;
+            align-items: center; 
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 4px;
+           
+        }
+        .container-article img:nth-child(1)
+        {
+            width: 70px;
+            height: 70px;
+           border-radius: 20%;
+           margin: 10px ;
+           image-rendering: crisp-edges;
+           cursor: pointer;
+           box-shadow: 1px 1px 10px var(--black-white);
+
+        }
+        .description
+        {
+            display: grid;
+            justify-content: start;
+            color: var(--gren);
+            font-weight: 500;
+        }
+        .value
+        {
+            display: grid;
+            justify-content: end;
+            margin-right: 8px;
+        }
+        .close 
+        {
+            width: 20px;
+            height: 20px;
+            background-color: var(--white-black);
+            border-radius: 50%;
+            box-shadow: 0.5px 0.5px 8px var(--hospital-green);
+            cursor: pointer;
+        }
+        .value-total
+        {  
+            width: 100%;
+            height:100px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr;
+            background-color: var(--very-light-pink);
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px var(--hospital-green);
+            margin-top: 10px;
+        }
+        .total
+        {
+            padding-left: 10px;
+            font-weight: 900;
+        }
+        .value-text
+        {
+            text-align: end;
+            margin-right: 40px;
+        }
+        .boton
+        {
+            width: 100%;
+            display: grid;
+            justify-content: center;
+        }
+        .primary-bottom
+        {
+            width: 400px;
+            height: 50px;
+            margin-bottom: 50px;
+            background: var(--hospital-green);
+            box-shadow: 1px 1px 10px var(--black);
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: var(--md-desk);
+            margin-top: 20px;
+        }
+        .primary-bottom:active
+        {
+            box-shadow: inset 10px 10px 5px rgba(0, 0, 0, 0.2);
+            transform: scale(0.95);
+        }
+        @media (max-width: 600px) {
+            aside
+            {
+                display: grid;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <aside>
+        <div class="container-article">
+            <img src="https://images.pexels.com/photos/2130611/pexels-photo-2130611.jpeg?auto=compress&cs=tinysrgb&w=400" alt="bycicle">
+            <p class="description">Bike 2023</p>
+            <p class="value">$120.00</p>
+            <img src="./icons/icon_close.png" alt="close" class="close">
+        </div>
+        <div class="container-article">
+            <img src="https://images.pexels.com/photos/2130611/pexels-photo-2130611.jpeg?auto=compress&cs=tinysrgb&w=400" alt="bycicle">
+            <p class="description">Bike 2023</p>
+            <p class="value">$120.00</p>
+            <img src="./icons/icon_close.png" alt="close" class="close">
+        </div>
+        <div class="container-article">
+            <img src="https://images.pexels.com/photos/2130611/pexels-photo-2130611.jpeg?auto=compress&cs=tinysrgb&w=400" alt="bycicle">
+            <p class="description">Bike 2023</p>
+            <p class="value">$120.00</p>
+            <img src="./icons/icon_close.png" alt="close" class="close">
+        </div>
+        <div class="container-article">
+            <img src="https://images.pexels.com/photos/2130611/pexels-photo-2130611.jpeg?auto=compress&cs=tinysrgb&w=400" alt="bycicle">
+            <p class="description">Bike 2023</p>
+            <p class="value">$120.00</p>
+            <img src="./icons/icon_close.png" alt="close" class="close">
+        </div>
+        <div class="container-article">
+            <img src="https://images.pexels.com/photos/2130611/pexels-photo-2130611.jpeg?auto=compress&cs=tinysrgb&w=400" alt="bycicle">
+            <p class="description">Bike 2023</p>
+            <p class="value">$120.00</p>
+            <img src="./icons/icon_close.png" alt="close" class="close">
+        </div>
+        <div class="container-article">
+            <img src="https://images.pexels.com/photos/2130611/pexels-photo-2130611.jpeg?auto=compress&cs=tinysrgb&w=400" alt="bycicle">
+            <p class="description">Bike 2023</p>
+            <p class="value">$120.00</p>
+            <img src="./icons/icon_close.png" alt="close" class="close">
+        </div>
+        <div class="value-total">
+            <p class="total">Total</p>
+            <p class="value-text">$600.00</p>
+            </div>
+            <div class="boton">
+                <button class="primary-bottom">CheckOut</button>
+            </div> 
+        
+        
+    </aside>
+</body>
+</html>
