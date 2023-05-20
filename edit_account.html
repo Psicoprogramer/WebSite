@@ -87,12 +87,20 @@
             {
              box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
             }
+           
+           
 
+            @media (max-width: 600px) {
+               #titulo{
+                background-color: #7452FF;
+                display: none;
+                }
+            }
     </style>
 </head>
 <body>
     <div class="content">
-        <div class="title">My account</div>
+        <div class="title" id="titulo" >My account</div>
         <form action="/" class="form">
         <label for="" class="user">Name</label>
         <input type="text"  id="" class="input__input-password" placeholder="Brayan cabrera">

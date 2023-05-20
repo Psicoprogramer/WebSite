@@ -1,0 +1,841 @@
+:root {
+    --black-white: #232323;
+    --white-black: #EBEBEB;
+    --chocolate: rgb(242, 144, 75);
+    --blue: #BDEDFF;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #f7f7f7;
+    --white: #FFFFFF;
+    --hospital-green: #acd9b2;
+    --black: #000000;
+    --sml: 13px;
+    --sm: 16px;
+    --md: 19;
+    --lg: 23px;
+    --lg-desk: 26px;
+    --poppins: font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--white);
+    margin: 0;
+}
+
+.inactive {
+    display: none;
+}
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 50px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-left,
+.navnar-right {
+    display: flex;
+    margin: 0;
+
+}
+
+.container-menu {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+/* Contenedor del logo */
+.container-logo {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    margin-left: 10px;
+}
+
+.container-lista {
+    height: inherit;
+    display: flex;
+
+}
+
+.ul-lista {
+    display: flex;
+}
+
+.navnar-right {
+    width: 100%;
+    display: flex;
+    padding-right: 10px;
+    color: chocolate;
+    height: inherit;
+    justify-content: flex-end;
+}
+
+.right-ul {
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    margin-left: 10px;
+
+}
+
+
+.lista a {
+    display: flex;
+    text-decoration: none;
+    color: var(--black);
+    margin-left: 20px;
+    margin-right: 20px;
+    /* Al colocar este padding aumeta el tamaño del espacido del su relleno de bordes */
+    padding: 6px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+
+.lista a:hover {
+    background: var(--hospital-green);
+    border-color: var(--hospital-green);
+    color: var(--white);
+}
+
+.carShop img {
+    margin-top: 15px;
+    padding-left: 10px;
+
+}
+
+.carShop {
+    position: relative;
+}
+
+.carShop:hover {
+    cursor: pointer;
+}
+
+.list-mail {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.list-mail:hover {
+
+    background: var(--hospital-green);
+    color: var(--text-input-field);
+    border-radius: 50pc;
+}
+
+.cantidad p {
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    width: 20px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--hospital-green);
+    top: 0;
+    right: 0;
+    display: grid;
+    align-items: end;
+    margin-top: 6px;
+    margin-right: -7px;
+}
+
+.desktop-menu {
+    position: absolute;
+    top: 51.5px;
+    right: 0;
+    background-color: var(--white);
+    width: 200px;
+    height: 150px;
+    border: 0 1px solid var(--very-light-pink);
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+
+
+}
+
+/* Modificando el estilo de las listas, quitamos el border y padin que traen por defecto en su estilo al igual que el punto. */
+.desktop-menu ul {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.desktop-menu ul li a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 10px
+}
+
+.desktop-menu ul li a:hover {
+    background: var(--hospital-green);
+    border-color: var(--hospital-green);
+    color: var(--white);
+    border-radius: 50pc;
+}
+
+/* Colocamos el primer y el segundo hijo en negrita */
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
+    font-weight: bold;
+    display: flex;
+}
+
+
+.desktop-menu ul li:nth-child(3) {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+
+.desktop-menu ul li .sign {
+    color: var(--hospital-green);
+    font-size: var(--sml);
+}
+
+/* Mobile menu */
+.mobile-menu {
+    margin: 10px 10px 10px 2px;
+    position: absolute;
+    top: 42px;
+    left: 0;
+
+    border-right: 6px solid var(--hospital-green);
+    border-bottom: 6px solid var(--hospital-green);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    background-color: var(--white);
+    width: 80%;
+    height: 80%;
+
+
+}
+
+.mobile-menu ul {
+    /* Quitamos el margen por defectos de las ul */
+    margin-left: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 5px;
+
+
+}
+
+.mobile-menu li {
+    list-style: none;
+}
+
+.one a {
+    color: var(--hospital-green);
+}
+
+.mobile-menu li a {
+    text-decoration: none;
+
+}
+
+.mobile-menu li a:hover {
+    background: var(--hospital-green);
+    border-color: var(--black);
+    color: var(--white);
+    border-radius: 5pc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.title-categorias {
+    border-bottom: 1px solid var(--black);
+    height: 50px;
+    text-align: center;
+    color: var(--hospital-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid;
+    box-shadow: 1px 0 3px;
+}
+
+.categorias {
+    margin: 6px;
+    border-bottom: 2px solid var(--hospital-green);
+    /* height: 114%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.categorias li {
+    padding: 14px;
+    height: 10px;
+}
+
+.categorias li a {
+    /* text-decoration: none; */
+    color: var(--black);
+    font-size: var(--md);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.others {
+
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    align-items: center;
+}
+
+.others li {
+    padding: 14px;
+    height: 10px;
+}
+
+.others li a {
+    font-weight: 600;
+    padding: 10px;
+}
+
+.mail a {
+    color: var(--chocolate);
+}
+
+.signOut a {
+    color: var(--hospital-green);
+    font-weight: 600;
+}
+
+/* Car shop */
+.container-aside {
+    display: grid;
+    width: 46%;
+    height: 100%;
+    background-color: var(--white);
+    position: absolute;
+    right: 1px;
+    top: 51.5px;
+    height: 100%;
+    box-shadow: 2px 2px 4px gray;
+    justify-content: center;
+
+}
+
+.container-article {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+.container-article img:nth-child(1) {
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    margin: 8px;
+    image-rendering: -webkit-optimize-contrast;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px var(--black-white);
+
+}
+
+.description {
+    display: grid;
+    justify-content: start;
+    color: var(--gren);
+    font-weight: 500;
+}
+
+.value {
+    display: grid;
+    justify-content: end;
+    margin-right: 8px;
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    background-color: var(--white-black);
+    border-radius: 50%;
+    box-shadow: 0.5px 0.5px 8px var(--hospital-green);
+    cursor: pointer;
+}
+
+.value-total {
+    width: 100%;
+    height: 3pc;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--very-light-pink);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--hospital-green);
+    margin-top: 10px;
+}
+
+.total {
+    padding-left: 10px;
+    font-weight: 900;
+}
+
+.value-text {
+    text-align: end;
+    margin-right: 40px;
+}
+
+.boton {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.primary-bottom {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 10px;
+    background: var(--hospital-green);
+    box-shadow: 1px 1px 10px var(--black);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: var(--md-desk);
+    margin-top: 20px;
+}
+
+.primary-bottom:active {
+    box-shadow: inset 10px 10px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+}
+
+.container-article img:nth-child(4):hover {
+    background-color: var(--black);
+}
+
+/*Lista de productos de index */
+.my_order {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.my_order h1 {
+    display: flex;
+    font-size: var(--lg-desk);
+    margin-top: 20 px;
+    margin-left: 8px;
+    justify-content: center;
+    color: var(--hospital-green);
+    margin-bottom: 20px;
+}
+
+.my_order-content {
+    width: auto;
+    height: 100px;
+    background: var(--blue);
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    margin: 20px 20px 20px 20px;
+}
+
+.my_order-content p {
+    padding-left: 10px;
+}
+
+.datos #row {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.datos span:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.datos span:nth-child(2) {
+    font-weight: 100;
+}
+
+
+
+/* Estilizando los contenedores de imagenes */
+.contenedorArtucules {
+    padding: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.contenedorArtucules img {
+    border-radius: 60px;
+    width: 250px;
+    height: 250px;
+}
+
+.contenedorArtucules p:nth-child(2) {
+    display: flex;
+    justify-content: right;
+}
+
+.description span {
+    font-size: var(--lg);
+}
+
+.description span:nth-child(1) {
+    color: var(--hospital-green);
+}
+
+.description_value {
+    /* Al dar un margin left auto esto mandando al contendor al final del contenedor padre */
+    margin-left: auto;
+    font-weight: bold;
+
+}
+
+
+.main-cointainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    grid-auto-flow: dense; /* Configuración para que los elementos se "bajen" */
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+/* configuramos el contenedor principal */
+.card-container {
+    gap: 20px;
+    width: 100%;
+    display: grid;
+    /*Usando esta propiedad le decimos a nuestras colummnas que se alinien 
+            en proporcion al tamaño de la pantalla y que su tamaño es de 240px*/
+    grid-template-columns: repeat(auto-fill, 240px);
+    place-content: center;
+}
+
+/* configuramos el contenedor de la imagen */
+.product-card {
+
+    width: 240px;
+    padding: 10px;
+}
+
+/* configuramos la imagen */
+.product-card img {
+
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    /*Propiedad que hace que los pixelajes se añadan al tamaño indicado*/
+    object-fit: cover;
+}
+
+/* configuramos el contenedor de texto y icono  */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* retiramos el margen del icono */
+.info figure {
+    margin: 0;
+
+}
+
+/* configutando el tamaño del icono  */
+.info figure img {
+    width: 40px;
+    height: 40px;
+
+}
+
+/* Configuramos el tamaño del texto de div en la expresion decimos que se personalize el primer p del hijo del div */
+.info div p:nth-child(2) {
+    font-size: var(--sm-des);
+    font-weight: bold;
+    margin-top: 16px;
+    margin-top: 4px;
+}
+
+.info div p:nth-child(1) {
+    font-size: var(--sm-mov);
+    color: var(--black);
+    margin-top: 0px;
+    margin-top: 0px;
+}
+
+
+/* configuramos el contenedor principal */
+.card-container {
+    gap: 20px;
+    width: 100%;
+    display: grid;
+    /*Usando esta propiedad le decimos a nuestras colummnas que se alinien 
+    en proporcion al tamaño de la pantalla y que su tamaño es de 240px*/
+    grid-template-columns: repeat(auto-fill, 240px);
+    place-content: center;
+}
+
+/* configuramos el contenedor de la imagen */
+.product-card {
+
+    width: 240px;
+    padding: 10px;
+}
+
+/* configuramos la imagen */
+.product-card img {
+
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    /*Propiedad que hace que los pixelajes se añadan al tamaño indicado*/
+    object-fit: cover;
+}
+
+/* configuramos el contenedor de texto y icono  */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* retiramos el margen del icono */
+.info figure {
+    margin: 0;
+
+}
+
+/* configutando el tamaño del icono  */
+.info figure img {
+    width: 40px;
+    height: 40px;
+
+}
+
+/* Configuramos el tamaño del texto de div en la expresion decimos que se personalize el primer p del hijo del div */
+.info div p:nth-child(2) {
+    font-size: var(--sm-des);
+    font-weight: bold;
+    margin-top: 16px;
+    margin-top: 4px;
+}
+
+.info div p:nth-child(1) {
+    font-size: var(--sm-mov);
+    color: var(--black);
+    margin-top: 0px;
+    margin-top: 0px;
+}
+
+@media (max-width:640px) {
+
+    /* configurando el tamaño del contenedor en movil */
+    .card-container {
+
+        display: grid;
+        /*Usando esta propiedad le decimos a nuestras colummnas que se alinien 
+            en proporcion al tamaño de la pantalla y que su tamaño es de 240px*/
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+
+    /* configurando el tamaño de la card en movile */
+    .product-card {
+        width: 140px;
+
+    }
+
+    /* configurando el tamaño de la imagen en movile*/
+    .product-card img {
+
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        /*Propiedad que hace que los pixelajes se añadan al tamaño indicado*/
+        object-fit: cover;
+    }
+
+    /* configurando el tamaño del contenedor en movil */
+    .card-container {
+
+        display: grid;
+        /*Usando esta propiedad le decimos a nuestras colummnas que se alinien 
+          en proporcion al tamaño de la pantalla y que su tamaño es de 240px*/
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+
+    /* configurando el tamaño de la card en movile */
+    .product-card {
+        width: 140px;
+
+    }
+
+    /* configurando el tamaño de la imagen en movile*/
+    .product-card img {
+
+        width: 140px;
+        height: 140px;
+        border-radius: 10px;
+        /*Propiedad que hace que los pixelajes se añadan al tamaño indicado*/
+        object-fit: cover;
+    }
+
+
+}
+
+@media (max-width: 1140px) {
+    .lista a {
+        margin-right: 1px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .lista a {
+        margin-right: 1px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .navbar-left,
+    .navnar-right {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .navbar-left,
+    .navnar-right {
+        font-size: 10px;
+    }
+    .main-cointainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+   
+}
+
+@media (max-width: 700px) {
+    .menu {
+        margin-left: 6px;
+        display: block;
+    }
+
+    .container-article {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navnar-right p {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .container-aside {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 6px;
+    }
+
+    .container-article img:nth-child(1) {
+        margin: 6px;
+    }
+
+    .value-total {
+        margin: 10px;
+        height: 2pc;
+        width: auto;
+    }
+
+    .primary-bottom {
+        width: 20pc;
+        height: 4pc;
+        margin-bottom: 50px;
+        background: var(--hospital-green);
+        box-shadow: 1px 1px 10px var(--black);
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: var(--md-desk);
+        margin-top: 20px;
+    }
+
+    .mobile-menu {
+        z-index: 2;
+    }
+}
+
+@media (min-width:600px) {
+    .mobile-menu {
+        display: none;
+
+    }
+
+    .contenedorArtucules img {
+        border-radius: 40px;
+        width: 150px;
+        height: 150px;
+        image-rendering: pixelated;
+    }
+
+    .description span {
+        font-size: var(--sm);
+    }
+
+    .description_value {
+        font-size: var(--sm);
+    }
+}
