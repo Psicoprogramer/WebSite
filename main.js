@@ -217,8 +217,8 @@ function getArticules(Listarticules) {
  const valueArticule = upParrafo("value",values);
 // Img close
  const imgClose = upElement("img",'close');
- imgClose.getAttribute('alt','close');
- imgClose.getAttribute('src','./icons/icon_close.png');
+ imgClose.setAttribute('alt','close');
+ imgClose.setAttribute('src','./icons/icon_close.png');
  
  containerArticule.append(imgArticule,NameArticule,valueArticule,imgClose)
  
