@@ -205,7 +205,7 @@ function getArticules(Listarticules) {
 
   const containerArticule = upElement("div", "container-article");
  // imagen 
- const imgArticule = upElement("img");
+ const imgArticule = upElement("img",'container-img');
  const imagenArtule = articule.img
  imgArticule.setAttribute('src',imagenArtule)
  imgArticule.setAttribute("alt", "articule");

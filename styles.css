@@ -395,7 +395,7 @@ nav {
     justify-items: center;
 }
 
-.container-article img:nth-child(1) {
+.container-img {
     width: 70px;
     height: 70px;
     border-radius: 20%;
