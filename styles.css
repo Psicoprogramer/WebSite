@@ -351,9 +351,9 @@ nav {
     right: 0;
     position: fixed;
     flex-direction: column;
-    /* padding: 30px; */
     background-color: var(--white);
     justify-content: center;
+    top: 50px;
 }
 /* Titulo del carrito de compras */
 .car-name{
