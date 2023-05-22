@@ -344,24 +344,55 @@ nav {
 
 /* Car shop */
 .container-aside {
-    display: grid;
-    width: 55%;
+    display: flex;
+    width: 60%;
     height: 100%;
+    margin-left: 6px;
+    right: 0;
+    position: fixed;
+    flex-direction: column;
+    /* padding: 30px; */
     background-color: var(--white);
-    position: absolute;
-    right: 1px;
-    top: 50px;
-    height: 95%;
-    box-shadow: 1px 0 10px black;
     justify-content: center;
-    border-radius: 0 0 20px 20px;
+}
+/* Titulo del carrito de compras */
+.car-name{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    color: chocolate;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 19px black;
+}
+/* imagenes del fondo del menu */
+.empity-img{
+    width: 200px;
+    position: absolute;
+    top: 224px;
+    left: 151px;
+    border-radius: 50pc;
+    box-shadow: 10px 1px 1px black;
+}
+.empity-h4 {
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    height: 200px;
+    background: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50pc;
+    box-shadow: 98px 10px 50px inset var(--chocolate), 2px 2px 2px black;
 }
 
 .container-article {
     display: grid;
-    align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 4px;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
 }
 
 .container-article img:nth-child(1) {
@@ -967,15 +998,35 @@ nav {
     }
 
     .container-aside {
-        display: grid;
+        display: flex;
         width: 100%;
-        justify-content: center;
-        align-items: center;
         height: 100%;
         margin-left: 6px;
         position: fixed;
+        flex-direction: column;
+        background-color: var(--white);
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
+    .buttom-car{
+        width: 230px;
+    font-size: var(--md-des);
+    font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+    background: var(--hospital-green);
+    color: var(--white);
+    padding: 12px 12px 12px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 64px 55px, rgba(0, 0, 0, 0.12) 10px 7px 0px 0px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: absolute;
+    top: 68px;
+    right: 32px;
+    }
     .container-article img:nth-child(1) {
         margin: 6px;
     }
